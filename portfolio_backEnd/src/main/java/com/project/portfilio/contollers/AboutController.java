@@ -23,8 +23,7 @@ public class AboutController {
     @GetMapping
     public About getAboutInfo() {
     	List<About>li=aboutRepository.findAll();
-    	int a=10;
-        return aboutRepository.findAll().get(0);
+        return li.get(0);
     }
 
     @PostMapping
